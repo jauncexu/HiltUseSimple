@@ -1,7 +1,21 @@
+Hilt的原理：
+    APT注解处理器 + ASM字节码插装
+
+
+项目build.gradle中导入
+ classpath 'com.google.dagger:hilt-android-gradle-plugin:2.28-alpha' // 导入gradle-plugin 字节码插庄
+
+app-> build.gradle
+  // hilt 依赖导入
+    implementation "com.google.dagger:hilt-android:2.28-alpha" // hilt的支持 百分之八十的代码是来自Dagger2
+    annotationProcessor "com.google.dagger:hilt-android-compiler:2.28-alpha" // Dagger的注解处理器APT 依赖使用
+
+
 Hilt反射实现  对隔离层的设计
 
 
 simple1  hilt的使用  代替dagger2
 
+simple2 全局单例
 
-simple3  接口的实现
+simple3 接口和对象的注入
